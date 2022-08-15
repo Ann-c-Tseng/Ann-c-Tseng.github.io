@@ -91,7 +91,7 @@ nav ul li {
     display: none;
 }
 
-.hero {
+.banner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,9 +100,10 @@ nav ul li {
     margin: auto;
 }
 
-.hero img {
-    height: 37.5rem;
-    width: 37.5rem;
+.banner img {
+    height: 500px; /* height of container */
+    object-fit: cover;
+    width: 100%;
 }
 
 .bio {
