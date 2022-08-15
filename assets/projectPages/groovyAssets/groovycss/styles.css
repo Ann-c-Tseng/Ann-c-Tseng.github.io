@@ -120,6 +120,10 @@ nav ul li {
     margin-bottom: var(--bottom-margin);
 }
 
+.intro_right{
+    margin-top: 2rem;
+}
+
 .intro_right h4 {
     margin-top: 1rem;
     font-weight: var(--medium-font);
@@ -182,10 +186,21 @@ footer {
     }
 
     .intro {
+        margin-top: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
         flex-direction: column;
     }
+
+    .intro_right {
+        margin-top: 0px;
+    }
 }
-  
-@media screen and (max-width: 420px) {
-    
+
+@media screen and (max-width: 1120px) {
+    .intro {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
 }
