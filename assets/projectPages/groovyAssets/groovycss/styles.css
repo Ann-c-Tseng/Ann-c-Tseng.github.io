@@ -204,6 +204,11 @@ footer {
         margin-left: 3rem;
         margin-right: 3rem;
     }
+
+    .design_question p{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -244,10 +249,5 @@ footer {
 
     .intro_right {
         margin-top: 0px;
-    }
-
-    .design_question p{
-        margin-left: 8rem;
-        margin-right: 8rem;
     }
 }
