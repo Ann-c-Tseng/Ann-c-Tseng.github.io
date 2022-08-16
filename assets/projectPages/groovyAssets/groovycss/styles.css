@@ -112,7 +112,11 @@ nav ul li {
     justify-content: left;
     gap: 2.5rem;
     max-width: 68.75rem;
-    margin: auto;
+    
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 2rem;
 }
 
 .intro_left h2 {
