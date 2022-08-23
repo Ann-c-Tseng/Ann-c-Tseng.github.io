@@ -276,32 +276,16 @@ nav ul li {
     width: 60%;
 }
 
-.six_main_findings{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-top: 2rem;
-
-    background-color: #e42158;
+/* 6 Main Findings section */
+.Row {
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
 }
-
-.findings_box_side1{
-    display: row;
-}
-.findings_box_side2{
-    display: row;
-}
-
-.findings_box{
-    width: 150px;
-    height: 150px;
-    background-color: green;
+.Column {
+    display: table-cell;
+    background-color: red; /*Optional*/
 }
 
 
