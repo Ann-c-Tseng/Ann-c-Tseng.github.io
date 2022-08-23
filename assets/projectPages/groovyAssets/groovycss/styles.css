@@ -204,16 +204,17 @@ nav ul li {
 
 .research p{
     font-weight: var(--normal-font);
-    line-height: var(--line-height);
 
-    padding: 0.3;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
 
-    text-align: left;
-
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 2rem;
-
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-top: 2rem;
 }
 
 .research_intro_centered{
@@ -239,16 +240,10 @@ nav ul li {
 
 .survey_process{
     text-align: left;
-
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 
 .view_survey_responses{
     text-align: left;
-
-    margin-left: 8rem;
-    margin-right: 8rem;
 }
 
 .survey_intended_respondents{
@@ -341,6 +336,16 @@ footer {
         margin-left: 8rem;
         margin-right: 8rem;
     }
+
+    .research p{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .view_survey_responses{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -381,5 +386,10 @@ footer {
 
     .intro_right {
         margin-top: 0px;
+    }
+
+    .research p{
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 }
