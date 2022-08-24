@@ -215,6 +215,8 @@ nav ul li {
     margin-left: auto;
     margin-bottom: 2rem;
     margin-top: 2rem;
+
+    text-align: left;
 }
 
 .research_intro_centered{
@@ -279,15 +281,31 @@ nav ul li {
 /* 6 Main Findings section */
 .Row {
     display: table;
-    width: 100%; /*Optional*/
-    table-layout: fixed; /*Optional*/
-    border-spacing: 10px; /*Optional*/
+    width: 100%;
+    table-layout: fixed; 
+    border-spacing: 10px;
 }
 .Column {
     display: table-cell;
-    background-color: red; /*Optional*/
+
+    background-color: rgb(63, 171, 108);
+
+    border-radius: 6px;
+    
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+    border-style: dashed;
+    border-color: var(--bg-color);
 }
 
+.empathy_map{
+    width: 60%;
+}
+
+.user_persona{
+    width: 60%;
+}
 
 /* FOOTER */
 footer {
