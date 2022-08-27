@@ -384,6 +384,51 @@ nav ul li {
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
+/* Initial Highfi Features Section */
+.initial_highfi_features_section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 5rem;
+
+    /* Must have this to align question to the center, 
+    otherwise text will still align left. */
+    text-align: center;
+}
+
+.initial_highfi_features_section h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+}
+
+.initial_highfi_features_section p{
+    font-weight: var(--normal-font);
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    text-align: left;
+}
+
+
+
+
+
+
 /* FOOTER */
 footer {
     background-color: var(--bg-color);
@@ -422,6 +467,16 @@ footer {
     }
 
     .view_survey_responses{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .first_highfi p{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .initial_highfi_features_section{
         margin-left: 3rem;
         margin-right: 3rem;
     }
@@ -468,6 +523,16 @@ footer {
     }
 
     .research p{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .first_highfi p{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .initial_highfi_features_section{
         margin-left: 3rem;
         margin-right: 3rem;
     }
