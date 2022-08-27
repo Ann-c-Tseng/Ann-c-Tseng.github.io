@@ -278,6 +278,14 @@ nav ul li {
     width: 60%;
 }
 
+.information_architecture{
+    width: 60%;
+}
+
+.low_fidelity_wireframes{
+    width: 60%;
+}
+
 /* 6 Main Findings section */
 .Row {
     display: table;
@@ -305,6 +313,75 @@ nav ul li {
 
 .user_persona{
     width: 60%;
+}
+
+/* Initial Iteration Highfi Section Style */
+.first_highfi {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 5rem;
+
+    /* Must have this to align question to the center, 
+    otherwise text will still align left. */
+    text-align: center;
+}
+
+.first_highfi h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+}
+
+.first_highfi p{
+    font-weight: var(--normal-font);
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    text-align: left;
+}
+
+/* Initial Iteration Highfi Image Display */
+.initial_highfi_row {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+    border-spacing: 10px;
+}
+.last_initial_highfi_row {
+    display: table;
+    width: 34%;
+    table-layout: fixed; 
+    border-spacing: 10px;
+}
+.initial_highfi_column {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.2rem;
+}
+.initial_highfi_img{
+    width:100%;
+
+    padding: 20px;
+    border-radius: 5px;
+    
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
 /* FOOTER */
