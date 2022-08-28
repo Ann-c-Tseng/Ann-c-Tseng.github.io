@@ -424,6 +424,36 @@ nav ul li {
     text-align: left;
 }
 
+.ihf_strip {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 2rem;
+
+    /* background-color: var(--bg-color); */
+}
+
+.ihf_strip_right{
+    margin-top: 2rem;
+}
+
+.ihf_strip_right h4 {
+    margin-top: 1rem;
+    font-weight: var(--medium-font);
+    /* margin-bottom: var(--bottom-margin); */
+}
+
+.ihf_strip_right p {
+    font-weight: var(--normal-font);
+    line-height: var(--line-height);
+    padding: 0.3;
+}
 
 
 
@@ -477,6 +507,11 @@ footer {
     }
 
     .initial_highfi_features_section{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .ihf_strip {
         margin-left: 3rem;
         margin-right: 3rem;
     }
@@ -535,5 +570,17 @@ footer {
     .initial_highfi_features_section{
         margin-left: 3rem;
         margin-right: 3rem;
+    }
+
+    .ihf_strip {
+        margin-top: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        flex-direction: column;
+    }
+
+    .ihf_strip_right { 
+        margin-top: 0px;
     }
 }
