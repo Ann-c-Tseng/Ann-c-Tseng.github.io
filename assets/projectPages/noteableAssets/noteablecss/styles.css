@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500;800&family=Roboto&display=swap');
+
+/* Variables */
+:root {
+  --font-family: "Jost", sans-serf;
+  --normal-font: 300; 
+  --medium-font: 500;
+  --bold-font: 800;
+  --bg-color: #fcfcfc;
+  --primary-color: #000000;
+  --secondary-color: #e42158;
+  --primary-shadow: #e3e1e1;
+  --secondary-shadow: #e3e1e1;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+nav h1 {
+    color: var(--primary-color);
+    font-weight: var(--medium-font);
+}
+  
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 0.5px solid var(--secondary-color);
+}
+  
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+  
+nav ul li {
+    font-weight: var(--normal-font);
+}
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+
+.banner img {
+    height: 500px; /* height of container */
+    object-fit: cover;
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 2rem;
+
+    /* background-color: var(--bg-color); */
+}
+
+.intro_left h2 {
+    font-weight: var(--medium-font);
+    margin-bottom: var(--bottom-margin);
+}
+
+.intro_right{
+    margin-top: 2rem;
+}
+
+.intro_right h4 {
+    margin-top: 1rem;
+    font-weight: var(--medium-font);
+    /* margin-bottom: var(--bottom-margin); */
+}
+
+.intro p {
+    font-weight: var(--normal-font);
+    line-height: var(--line-height);
+    padding: 0.3;
+}
+
+.design_question {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 5rem;
+
+    /* Must have this to align question to the center, 
+    otherwise text will still align left. */
+    text-align: center;
+}
+
+.design_question hr{
+    text-align:center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.design_question h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+}
+
+.design_question p{
+    font-weight: var(--normal-font);
+    line-height: var(--line-height);
+    padding: 0.3;
+
+    margin-bottom: 5rem;
+}
+
+.research {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 5rem;
+
+    /* Must have this to align question to the center, 
+    otherwise text will still align left. */
+    text-align: center;
+}
+
+
+
+.research h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+}
+
+.research p{
+    font-weight: var(--normal-font);
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    text-align: left;
+}
+
+.research_intro_centered{
+    text-align: center !important;
+}
+
+.research ol{
+    text-align: left;
+
+    font-weight: var(--normal-font);
+    line-height: var(--line-height);
+    padding: 0.3;
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+    margin-bottom: 5rem;
+}
+
+.research li{
+    margin-bottom: 1rem;
+}
+
+.survey_process{
+    text-align: left;
+}
+
+.view_survey_responses{
+    text-align: left;
+}
+
+.survey_intended_respondents{
+    text-align: left;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.survey_limitations_title {
+    text-align: left;
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+    
+    margin-left: 4rem;
+    margin-right: 4rem; 
+    margin-bottom: 0.5rem;
+}
+
+.survey_limitations_ul {
+    text-align: left;
+    list-style-type: disc;
+    font-weight: var(--normal-font);
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.affinity_diagram{
+    width: 60%;
+}
+
+.information_architecture{
+    width: 60%;
+}
+
+.low_fidelity_wireframes{
+    width: 60%;
+}
+
+/* 6 Main Findings section */
+.Row {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+    border-spacing: 10px;
+}
+.Column {
+    display: table-cell;
+
+    background-color: rgb(63, 171, 108);
+
+    border-radius: 6px;
+    
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+    border-style: dashed;
+    border-color: var(--bg-color);
+}
+
+.empathy_map{
+    width: 60%;
+}
+
+.user_persona{
+    width: 60%;
+}
+
+/* Initial Iteration Highfi Section Style */
+.first_highfi {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 5rem;
+
+    /* Must have this to align question to the center, 
+    otherwise text will still align left. */
+    text-align: center;
+}
+
+.first_highfi h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+}
+
+.first_highfi p{
+    font-weight: var(--normal-font);
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    text-align: left;
+}
+
+/* Initial Iteration Highfi Image Display */
+.initial_highfi_row {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+    border-spacing: 10px;
+}
+.last_initial_highfi_row {
+    display: table;
+    width: 34%;
+    table-layout: fixed; 
+    border-spacing: 10px;
+}
+.initial_highfi_column {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.2rem;
+}
+.initial_highfi_img{
+    width:100%;
+
+    padding: 20px;
+    border-radius: 5px;
+    
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+/* Initial Highfi Features Section */
+.initial_highfi_features_section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 5rem;
+
+    /* Must have this to align question to the center, 
+    otherwise text will still align left. */
+    text-align: center;
+}
+
+.initial_highfi_features_section h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+}
+
+.initial_highfi_features_section p{
+    font-weight: var(--normal-font);
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    text-align: left;
+}
+
+.ihf_strip {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 2rem;
+}
+
+.ihf_strip_right{
+    margin-top: 2rem;
+}
+
+.ihf_strip_right h4 {
+    margin-top: 1rem;
+    font-weight: var(--medium-font);
+    /* margin-bottom: var(--bottom-margin); */
+
+    text-align: center;
+}
+
+.ihf_strip_right p {
+    font-weight: var(--normal-font);
+    line-height: var(--line-height);
+    padding: 0.3;
+}
+
+.ihf_strip_img {
+    max-width: 17rem;
+}
+
+/* Reiteration Section */
+.reiteration_highfi {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 5rem;
+
+    /* Must have this to align question to the center, 
+    otherwise text will still align left. */
+    text-align: center;
+}
+
+.reiteration_highfi h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+}
+
+.reiteration_highfi p{
+    font-weight: var(--normal-font);
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    text-align: left;
+}
+
+.font_and_colour_main_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 2rem;
+}
+.font_and_colour_left_div img{
+    width: 20rem;
+}
+.font_and_colour_right_div img{
+    width: 20rem;
+}
+
+
+/* Learnings and Improvements section */
+
+/* Initial Highfi Features Section */
+.learnings_and_improvements {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 5rem;
+
+    /* Must have this to align question to the center, 
+    otherwise text will still align left. */
+    text-align: center;
+}
+
+.learnings_and_improvements h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+}
+
+.learnings_and_improvements p{
+    font-weight: var(--normal-font);
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    text-align: left;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+  
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1120px) {
+    .intro {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .design_question p{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    .research p{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .view_survey_responses{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .first_highfi p{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .initial_highfi_features_section{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .ihf_strip {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .reiteration_highfi{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .font_and_colour_main_div {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .learnings_and_improvements {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    nav {
+        padding: 1.5rem 1rem;   
+    }
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+  
+    nav ul li {
+        margin: 8px;
+    }
+  
+    .burger-menu {
+        display: block;
+    }
+  
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    .intro {
+        margin-top: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        flex-direction: column;
+    }
+
+    .intro_right {
+        margin-top: 0px;
+    }
+
+    .research p{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .first_highfi p{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .initial_highfi_features_section{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .ihf_strip {
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        flex-direction: column;
+    }
+
+    .ihf_strip_right { 
+        margin-top: 0px;
+    }
+
+    .reiteration_highfi{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .font_and_colour_main_div {
+        margin-top: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        flex-direction: column;
+    }
+
+    .learnings_and_improvements {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
