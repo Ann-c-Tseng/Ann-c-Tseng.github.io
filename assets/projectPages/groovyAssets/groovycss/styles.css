@@ -455,6 +455,10 @@ nav ul li {
     padding: 0.3;
 }
 
+.ihf_strip_img {
+    max-width: 17rem;
+}
+
 
 
 
@@ -573,7 +577,6 @@ footer {
     }
 
     .ihf_strip {
-        margin-top: 2rem;
         margin-left: 3rem;
         margin-right: 3rem;
 
