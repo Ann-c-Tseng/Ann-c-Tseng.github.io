@@ -459,9 +459,105 @@ nav ul li {
     max-width: 17rem;
 }
 
+/* Reiteration Section */
+.reiteration_highfi {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 5rem;
+
+    /* Must have this to align question to the center, 
+    otherwise text will still align left. */
+    text-align: center;
+}
+
+.reiteration_highfi h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+}
+
+.reiteration_highfi p{
+    font-weight: var(--normal-font);
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    text-align: left;
+}
+
+.font_and_colour_main_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 2rem;
+}
+.font_and_colour_left_div img{
+    width: 20rem;
+}
+.font_and_colour_right_div img{
+    width: 20rem;
+}
 
 
+/* Learnings and Improvements section */
 
+/* Initial Highfi Features Section */
+.learnings_and_improvements {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 5rem;
+
+    /* Must have this to align question to the center, 
+    otherwise text will still align left. */
+    text-align: center;
+}
+
+.learnings_and_improvements h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+}
+
+.learnings_and_improvements p{
+    font-weight: var(--normal-font);
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    text-align: left;
+}
 
 /* FOOTER */
 footer {
@@ -516,6 +612,21 @@ footer {
     }
 
     .ihf_strip {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .reiteration_highfi{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .font_and_colour_main_div {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .learnings_and_improvements {
         margin-left: 3rem;
         margin-right: 3rem;
     }
@@ -585,5 +696,23 @@ footer {
 
     .ihf_strip_right { 
         margin-top: 0px;
+    }
+
+    .reiteration_highfi{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .font_and_colour_main_div {
+        margin-top: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        flex-direction: column;
+    }
+
+    .learnings_and_improvements {
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 }
