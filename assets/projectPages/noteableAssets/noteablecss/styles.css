@@ -178,6 +178,70 @@ nav ul li {
     margin-bottom: 5rem;
 }
 
+.ideation_empathymap_painpoints_informationarchitecture{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 2rem;
+}
+
+.ideation_empathymap_painpoints_informationarchitecture h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+
+    text-align: center;
+}
+
+.ideation_empathymap_painpoints_informationarchitecture p{
+    font-weight: var(--normal-font);
+    line-height: var(--line-height);
+    padding: 0.3;
+}
+
+.Row {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+    border-spacing: 10px;
+}
+.Column {
+    display: table-cell;
+
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+
+    border-radius: 5px;
+
+    background-color: #ff9292;
+}
+
+.client_initial_design {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 2rem;
+}
+
+.client_initial_design img{
+    width: 33%;
+}
+
+.empathy_map{
+    width: 60%;
+}
+
 
 /* FOOTER */
 footer {
@@ -210,6 +274,25 @@ footer {
         margin-left: 8rem;
         margin-right: 8rem;
     }
+
+    .ideation_empathymap_painpoints_informationarchitecture{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .client_initial_design{
+        display: block;
+        align-items: center;
+        align-content: center;
+    }
+
+    .client_initial_design img{
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+
+
 }
 
 @media screen and (max-width: 720px) {
@@ -250,5 +333,22 @@ footer {
 
     .intro_right {
         margin-top: 0px;
+    }
+
+    .ideation_empathymap_painpoints_informationarchitecture{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .client_initial_design{
+        display: block;
+        align-items: center;
+        align-content: center;
+    }
+
+    .client_initial_design img{
+        width: 100%;
+        align-items: center;
+        align-content: center;
     }
 }
