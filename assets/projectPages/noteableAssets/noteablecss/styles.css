@@ -303,6 +303,38 @@ nav ul li {
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px; */
 }
 
+.final_section{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 2rem;
+}
+
+.final_section h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+    
+    text-align: center;
+}
+
+.final_section p{
+    font-weight: var(--normal-font);
+    line-height: var(--line-height);
+    padding: 0.3;  
+}
+
+.final_features_GIF {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
 
 
 /* FOOTER */
@@ -355,6 +387,11 @@ footer {
     }
 
     .wireframes_section{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .final_section{
         margin-left: 3rem;
         margin-right: 3rem;
     }
@@ -418,6 +455,11 @@ footer {
     }
 
     .wireframes_section{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .final_section{
         margin-left: 3rem;
         margin-right: 3rem;
     }
