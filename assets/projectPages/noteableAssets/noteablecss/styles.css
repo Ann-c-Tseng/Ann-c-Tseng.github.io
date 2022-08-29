@@ -239,8 +239,70 @@ nav ul li {
 }
 
 .empathy_map{
+    width: 100%;
+}
+
+.pain_points{
+    width: 100%;
+}
+
+.info_arch{
+    margin-left: 28%;
     width: 60%;
 }
+
+.wireframes_section{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 2rem;
+}
+
+.wireframes_section h4{
+    margin-top: 5rem;
+    font-weight: var(--medium-font);
+    
+    text-align: center;
+}
+
+.wireframes_section p{
+    font-weight: var(--normal-font);
+    line-height: var(--line-height);
+    padding: 0.3;
+}
+
+.wf_img{
+    width: 100%;
+}
+
+.Row_wf {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+    border-spacing: 10px;
+}
+.Column_wf {
+    display: table-cell;
+
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+
+    border: 1px solid darkslategrey;
+
+    /* border-radius: 5px;
+  
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px; */
+}
+
 
 
 /* FOOTER */
@@ -292,7 +354,10 @@ footer {
         align-content: center;
     }
 
-
+    .wireframes_section{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -350,5 +415,10 @@ footer {
         width: 100%;
         align-items: center;
         align-content: center;
+    }
+
+    .wireframes_section{
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 }
