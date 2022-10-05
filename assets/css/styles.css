@@ -177,6 +177,17 @@ nav ul li {
     margin: 10px;
 }
 
+.project-link {
+    padding-right: 25px;
+    padding-left: 25px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: rgb(21, 18, 18);
+    border-width: 5px;
+    background-color: rgb(21, 18, 18);
+    color: rgb(255, 255, 255);
+}
+
 .socials {
     display: flex;
     flex-direction: column;
