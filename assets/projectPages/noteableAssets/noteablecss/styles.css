@@ -218,7 +218,8 @@ nav ul li {
 
     border-radius: 5px;
 
-    background-color: #ff9292;
+    background-color: #e8e8e8;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
 
 .client_initial_design {
