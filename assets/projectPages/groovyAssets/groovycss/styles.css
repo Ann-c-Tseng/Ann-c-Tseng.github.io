@@ -275,7 +275,8 @@ nav ul li {
 }
 
 .affinity_diagram{
-    width: 60%;
+    width: 40%;
+    filter: grayscale(85%);
 }
 
 .information_architecture{
@@ -286,6 +287,9 @@ nav ul li {
     width: 60%;
 }
 
+.initialHighfiImg{
+    width: 80%;
+}
 /* 6 Main Findings section */
 .Row {
     display: table;
@@ -296,14 +300,14 @@ nav ul li {
 .Column {
     display: table-cell;
 
-    background-color: rgb(230, 230, 230);
+    background-color: #fafafa;
 
     border-radius: 6px;
     
     text-align: center;
     vertical-align: middle;
     padding: 0.5rem;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px rgba(40, 18, 18, 0.1);
 }
 
 .empathy_map{
