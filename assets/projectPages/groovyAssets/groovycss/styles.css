@@ -46,6 +46,13 @@ body {
   font-family: var(--font-family);
 }
 
+p.p_alignCenter {
+    display: block; 
+    text-align: center; 
+
+    background-color: green;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -284,7 +291,7 @@ nav ul li {
 }
 
 .low_fidelity_wireframes{
-    width: 60%;
+    width: 75%;
 }
 
 .initialHighfiImg{
@@ -300,7 +307,7 @@ nav ul li {
 .Column {
     display: table-cell;
 
-    background-color: #fafafa;
+    background-color: #ffffff;
 
     border-radius: 6px;
     
@@ -471,6 +478,7 @@ nav ul li {
     gap: 2.5rem;
     max-width: 68.75rem;
 
+
     margin-right: auto;
     margin-left: auto;
     margin-bottom: auto;
@@ -556,13 +564,13 @@ nav ul li {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: auto;
-    margin-top: 2rem;
+    margin-top:0
 }
 .font_and_colour_left_div img{
-    width: 20rem;
+    width: 15rem;
 }
 .font_and_colour_right_div img{
-    width: 20rem;
+    width: 15rem;
 }
 
 .learnings_and_improvements {
