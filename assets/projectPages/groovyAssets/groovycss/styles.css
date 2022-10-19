@@ -291,6 +291,7 @@ nav ul li {
 }
 
 .low_fidelity_wireframes{
+    margin-top: 3rem;
     width: 75%;
 }
 
@@ -307,7 +308,7 @@ nav ul li {
 .Column {
     display: table-cell;
 
-    background-color: #ffffff;
+    background-color: #f2f1e5;
 
     border-radius: 6px;
     
@@ -315,6 +316,8 @@ nav ul li {
     vertical-align: middle;
     padding: 0.5rem;
     box-shadow: 0 3px 5px rgba(40, 18, 18, 0.1);
+
+    color: #4b7e8a;
 }
 
 .empathy_map{
