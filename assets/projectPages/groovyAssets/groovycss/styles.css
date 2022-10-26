@@ -303,7 +303,7 @@ nav ul li {
     display: table;
     width: 100%;
     table-layout: fixed; 
-    border-spacing: 10px;
+    border-spacing: 1.5rem;
 }
 .Column {
     display: table-cell;
