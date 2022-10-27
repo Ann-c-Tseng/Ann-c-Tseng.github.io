@@ -295,9 +295,6 @@ nav ul li {
     width: 75%;
 }
 
-.initialHighfiImg{
-    width: 80%;
-}
 /* 6 Main Findings section */
 .Row {
     display: table;
@@ -492,6 +489,14 @@ nav ul li {
     text-align: center;
 }
 
+.initialHighfiImg{
+    width: 80%;
+}
+
+.secondHighfiImg {
+    width: 80%;
+}
+
 .reiteration_highfi h4{
     margin-top: 5rem;
     font-weight: var(--medium-font);
@@ -514,51 +519,6 @@ nav ul li {
     text-align: left;
 }
 
-/* Slide Show styling */
-.mySlides1, .mySlides2 .mySlides3 {display: none}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-    background-color: var(--bg-color);
-    border-radius: 25px;
-
-    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 90%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.3s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* Hide left */
-.prev {
-    display: none;
-}
-
-/* On hover, add a grey background color */
-.prev, .next {
-    background-color: #dcdcdc;
-}
-
 .font_and_colour_main_div{
     display: flex;
     align-items: center;
@@ -574,6 +534,10 @@ nav ul li {
 }
 .font_and_colour_right_div img{
     width: 15rem;
+}
+
+.finalSolutionGifs img {
+    width: 30%;
 }
 
 .learnings_and_improvements {
