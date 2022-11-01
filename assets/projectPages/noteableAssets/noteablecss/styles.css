@@ -15,6 +15,7 @@
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
+  --box-shadow: 6px 6px 19px -3px #e1e2e7;
 }
 /* Variables end */
 
@@ -190,6 +191,7 @@ nav ul li {
     margin-top: 2rem;
 }
 
+
 .ideation_empathymap_painpoints_informationarchitecture h4{
     margin-top: 5rem;
     font-weight: var(--medium-font);
@@ -239,17 +241,38 @@ nav ul li {
     width: 33%;
 }
 
+.empathy_map_section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
 .empathy_map{
-    width: 100%;
+    max-height: auto; 
+    width: 60%;
+}
+
+.pain_points_section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
 }
 
 .pain_points{
+    max-height: auto; 
     width: 100%;
 }
 
+.info_architecture {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+
 .info_arch{
-    margin-left: 28%;
-    width: 60%;
+    max-height: auto; 
+    width: 100%;
 }
 
 .wireframes_section{
@@ -290,18 +313,9 @@ nav ul li {
 }
 .Column_wf {
     display: table-cell;
-
     text-align: center;
     vertical-align: middle;
     padding: 0.5rem;
-
-    border: 1px solid darkslategrey;
-
-    /* border-radius: 5px;
-  
-    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-    -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px; */
 }
 
 .final_section{
@@ -318,7 +332,6 @@ nav ul li {
 }
 
 .final_section h4{
-    margin-top: 5rem;
     font-weight: var(--medium-font);
     
     text-align: center;
@@ -335,6 +348,11 @@ nav ul li {
     margin-left: auto;
     margin-right: auto;
     width: 55%;
+    box-shadow: var(--box-shadow);
+}
+
+.conclusion h4{
+    margin-top: 4rem;
 }
 
 
