@@ -231,6 +231,27 @@ nav ul li {
     .strip h4 {
         text-align: center;
     }
+
+    .final-solution-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .solution-strip {
+        display: inline-block;
+    }
+    
+    .solution-strip div {
+        align-self: stretch;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .solution-strip img {
+        width: 90%;
+    }
 }
 
 @media screen  and (max-width: 800px) {
