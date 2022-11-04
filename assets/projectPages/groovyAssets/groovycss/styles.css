@@ -137,12 +137,60 @@ nav ul li {
 
 .strip {
     margin-top: calc(var(--left-right-margin)*1.61803*3);
-    padding: 4rem; 
-    background-color:#8ea9df;
-    border: 1px solid black;
+    padding-left: 7rem; 
+    padding-right: 7rem; 
+    /* background-color:#8ea9df;
+    border: 1px solid black; */
 }
 
+.strip p {
+    text-align: center;
+}
 
+.strip img {
+    width: 100%;
+    height: auto;
+}
+
+/* .final-solution-section {
+    margin: 0;
+} */
+
+.solution-strip {
+    display: flex;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    border: 1px solid rgb(57, 79, 54);
+    border-radius: 2rem;
+}
+
+.solution-strip div{
+    max-width: 50%;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.solution-strip h4 {
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+
+.solution-strip p {
+    position: relative;
+    top: 30%;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.solution-strip img {
+    margin: 1rem;
+    height: auto;
+    width: 70%;
+    box-shadow: var(--box-shadow);
+}
 
 /* Scrollup and Scrollup icon */
 .scroll-up {
@@ -176,7 +224,12 @@ nav ul li {
     }
 
     .strip {
-        padding: 1rem; 
+        padding-left: 7rem; 
+        padding-right: 7rem; 
+    }
+
+    .strip h4 {
+        text-align: center;
     }
 }
 
