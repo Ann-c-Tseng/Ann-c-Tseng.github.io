@@ -183,6 +183,8 @@ nav ul li {
     top: 30%;
     text-align: left;
     margin-bottom: 1rem;
+
+    margin-right: 1rem;
 }
 
 .solution-strip img {
@@ -247,6 +249,10 @@ nav ul li {
         align-self: stretch;
         margin: 0 auto;
         padding: 0;
+    }
+
+    .solution-strip p {
+        margin-left: 0;
     }
 
     .solution-strip img {
