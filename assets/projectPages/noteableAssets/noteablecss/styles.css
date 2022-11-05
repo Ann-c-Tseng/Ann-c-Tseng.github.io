@@ -9,11 +9,9 @@
   --bg-color: #fcfcfc;
   --primary-color: #000000;
   --secondary-color: #8ea9df;
-  --primary-shadow: #e3e1e1;
-  --secondary-shadow: #e3e1e1;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
+  --top-margin: 2rem;
+  --bottom-margin: 2rem;
+  --left-right-margin: 1rem;
   --transition: 0.3s;
   --box-shadow: 6px 6px 19px -3px #e1e2e7;
 }
@@ -23,7 +21,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* CSS Resets */
+/* CSS Resets*/
 * {
   margin: 0;
   padding: 0;
@@ -43,15 +41,20 @@ a:hover {
   color: var(--secondary-color);
 }
 
-body {
-  font-family: var(--font-family);
+h4 {
+    text-align: center;
+    font-weight: var(--medium-font);
 }
 
-p.p_alignCenter {
-    display: block; 
-    text-align: center; 
+h2 {
+    text-align: left;
+    font-weight: var(--medium-font);
+}
 
-    background-color: green;
+body {
+    font-family: var(--font-family);
+    font-weight: 100;
+    text-align: left;
 }
 
 nav {
@@ -114,16 +117,93 @@ nav ul li {
     width: 100%;
 }
 
-
-
-/* FOOTER */
-footer {
-    background-color: var(--bg-color);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 2rem 0 0;
+.casestudy-global {
+    margin: calc(var(--left-right-margin)*1.61803*2) calc(var(--left-right-margin)*1.61803*12);
 }
 
+.intro-strip {
+    display: flex;
+}
+
+.intro-strip div{
+    max-width: 50%;
+    padding: 1rem; 
+}
+
+.intro-strip h4 {
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.client-initial-designs {
+    display: flex;
+}
+
+.client-initial-designs div {
+    flex: 33.33%;
+}
+
+.client-initial-designs img {
+    max-width: 33.33%;
+}
+
+.strip {
+    margin-top: calc(var(--left-right-margin)*1.61803*3);
+    padding-left: 7rem; 
+    padding-right: 7rem; 
+    /* background-color:#8ea9df;
+    border: 1px solid black; */
+}
+
+.strip p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.strip img {
+    width: 100%;
+    height: auto;
+}
+
+.solution-strip {
+    display: flex;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    border: 1px solid rgb(57, 79, 54);
+    border-radius: 2rem;
+}
+
+.solution-strip div{
+    max-width: 50%;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.solution-strip h4 {
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+
+.solution-strip p {
+    position: relative;
+    top: 30%;
+    text-align: left;
+    margin-bottom: 1rem;
+
+    margin-right: 2rem;
+}
+
+.solution-strip img {
+    margin: 1rem;
+    height: auto;
+    width: 70%;
+    box-shadow: var(--box-shadow);
+}
+
+/* Scrollup and Scrollup icon */
 .scroll-up {
     position: fixed;
     right: 0.5%;
@@ -138,10 +218,58 @@ footer {
 
 /* Media queries */
 @media screen and (max-width: 1200px) {
+    .casestudy-global {
+        margin: calc(var(--left-right-margin)*1.61803*2) calc(var(--left-right-margin)*1.61803*6);
+    }
 
+    .intro-strip {
+        display: inline;
+    }
+
+    .intro-strip div {
+        max-width: 100%;
+    }
+
+    .intro-strip h2, h4 {
+        text-align: left;
+    }
+
+    .strip {
+        padding-left: 7rem; 
+        padding-right: 7rem; 
+    }
+
+    .strip h4 {
+        text-align: center;
+    }
+
+    .final-solution-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .solution-strip {
+        display: inline-block;
+    }
+    
+    .solution-strip div {
+        align-self: stretch;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .solution-strip p {
+        margin-right: 0;
+    }
+
+    .solution-strip img {
+        width: 90%;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen  and (max-width: 800px) {
     nav {
         padding: 1.5rem 1rem;   
     }
@@ -168,8 +296,33 @@ footer {
     nav ul.show {
         transform: translateX(0);
     }
+
+    .casestudy-global {
+        margin: calc(var(--left-right-margin)*1.61803*2) calc(var(--left-right-margin)*1.61803*1);
+    }
+
+    .strip {
+        padding: 1rem; 
+    }
 }
 
 @media screen and (max-width: 320px) {
+    .casestudy-global {
+        margin: var(--left-right-margin);
+    }
 
+    .intro-strip div {
+        max-width: 100%;
+    }
+
+    .intro-strip h2, h4 {
+        text-align: left;
+    }
+
+    .strip {
+        margin-top: var(--top-margin);
+        height: auto;
+        margin-bottom: var(--bottom-margin);
+        padding: 1rem; 
+    } 
 }
