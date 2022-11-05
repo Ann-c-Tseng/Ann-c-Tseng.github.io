@@ -152,10 +152,6 @@ nav ul li {
     height: auto;
 }
 
-/* .final-solution-section {
-    margin: 0;
-} */
-
 .solution-strip {
     display: flex;
     box-shadow: var(--box-shadow);
@@ -184,7 +180,7 @@ nav ul li {
     text-align: left;
     margin-bottom: 1rem;
 
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .solution-strip img {
@@ -252,7 +248,7 @@ nav ul li {
     }
 
     .solution-strip p {
-        margin-left: 0;
+        margin-right: 0;
     }
 
     .solution-strip img {
