@@ -9,11 +9,9 @@
   --bg-color: #fcfcfc;
   --primary-color: #000000;
   --secondary-color: #8ea9df;
-  --primary-shadow: #e3e1e1;
-  --secondary-shadow: #e3e1e1;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
+  --top-margin: 2rem;
+  --bottom-margin: 2rem;
+  --left-right-margin: 1rem;
   --transition: 0.3s;
   --box-shadow: 6px 6px 19px -3px #e1e2e7;
 }
@@ -23,7 +21,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* CSS Resets */
+/* CSS Resets*/
 * {
   margin: 0;
   padding: 0;
@@ -43,8 +41,20 @@ a:hover {
   color: var(--secondary-color);
 }
 
+h4 {
+    text-align: center;
+    font-weight: var(--medium-font);
+}
+
+h2 {
+    text-align: left;
+    font-weight: var(--medium-font);
+}
+
 body {
-  font-family: var(--font-family);
+    font-family: var(--font-family);
+    font-weight: 100;
+    text-align: left;
 }
 
 nav {
@@ -107,263 +117,93 @@ nav ul li {
     width: 100%;
 }
 
-.intro {
+.casestudy-global {
+    margin: calc(var(--left-right-margin)*1.61803*2) calc(var(--left-right-margin)*1.61803*12);
+}
+
+.intro-strip {
     display: flex;
-    align-items: left;
-    justify-content: left;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-top: 2rem;
-
-    /* background-color: var(--bg-color); */
 }
 
-.intro_left h2 {
-    font-weight: var(--medium-font);
-    margin-bottom: var(--bottom-margin);
+.intro-strip div{
+    max-width: 50%;
+    padding: 1rem; 
 }
 
-.intro_right{
-    margin-top: 2rem;
+.intro-strip h4 {
+    text-align: left;
+    padding-top: 1rem;
 }
 
-.intro_right h4 {
-    margin-top: 1rem;
-    font-weight: var(--medium-font);
-    /* margin-bottom: var(--bottom-margin); */
+.client-initial-designs {
+    display: flex;
 }
 
-.intro p {
-    font-weight: var(--normal-font);
-    line-height: var(--line-height);
-    padding: 0.3;
+.client-initial-designs div {
+    flex: 33.33%;
 }
 
-.design_question {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
+.client-initial-designs img {
+    max-width: 33.33%;
+}
 
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-top: 5rem;
+.strip {
+    margin-top: calc(var(--left-right-margin)*1.61803*3);
+    padding-left: 7rem; 
+    padding-right: 7rem; 
+    /* background-color:#8ea9df;
+    border: 1px solid black; */
+}
 
-    /* Must have this to align question to the center, 
-    otherwise text will still align left. */
+.strip p {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
-.design_question hr{
-    text-align:center;
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-
-.design_question h4{
-    margin-top: 5rem;
-    font-weight: var(--medium-font);
-}
-
-.design_question p{
-    font-weight: var(--normal-font);
-    line-height: var(--line-height);
-    padding: 0.3;
-
-    margin-bottom: 5rem;
-}
-
-.ideation_empathymap_painpoints_informationarchitecture{
-    display: block;
-    align-items: center;
-    justify-content: center;
-    max-width: 68.75rem;
-
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-top: 2rem;
-}
-
-
-.ideation_empathymap_painpoints_informationarchitecture h4{
-    margin-top: 5rem;
-    font-weight: var(--medium-font);
-
-    text-align: center;
-}
-
-.ideation_empathymap_painpoints_informationarchitecture p{
-    font-weight: var(--normal-font);
-    line-height: var(--line-height);
-    padding: 0.3;
-}
-
-.Row {
-    display: table;
+.strip img {
     width: 100%;
-    table-layout: fixed; 
-    border-spacing: 10px;
-}
-.Column {
-    display: table-cell;
-
-    text-align: center;
-    vertical-align: middle;
-    padding: 0.5rem;
-
-    border-radius: 5px;
-
-    background-color: #e8e8e8;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    height: auto;
 }
 
-.client_initial_design {
-    display: block;
+.solution-strip {
+    display: flex;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    border: 1px solid rgb(57, 79, 54);
+    border-radius: 2rem;
+}
+
+.solution-strip div{
+    max-width: 50%;
     align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
 }
 
-.client_initial_design img{
-    width: 33%;
+.solution-strip h4 {
+    position: relative;
+    top: 30%;
+    text-align: center;
 }
 
-.empathy_map_section {
-    margin-left: 2rem;
+.solution-strip p {
+    position: relative;
+    top: 30%;
+    text-align: left;
+    margin-bottom: 1rem;
+
     margin-right: 2rem;
-    text-align: center;
 }
 
-.empathy_map{
-    max-height: auto; 
-    width: 60%;
-}
-
-.pain_points_section {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    text-align: center;
-}
-
-.pain_points{
-    max-height: auto; 
-    width: 100%;
-}
-
-.info_architecture {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    text-align: center;
-}
-
-
-.info_arch{
-    max-height: auto; 
-    width: 100%;
-}
-
-.wireframes_section{
-    display: block;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-top: 2rem;
-}
-
-.wireframes_section h4{
-    margin-top: 5rem;
-    font-weight: var(--medium-font);
-    
-    text-align: center;
-}
-
-.wireframes_section p{
-    font-weight: var(--normal-font);
-    line-height: var(--line-height);
-    padding: 0.3;
-}
-
-.wf_img{
-    width: 100%;
-}
-
-.Row_wf {
-    display: table;
-    width: 100%;
-    table-layout: fixed; 
-    border-spacing: 10px;
-}
-.Column_wf {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    padding: 0.5rem;
-}
-
-.final_section{
-    display: block;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-top: 2rem;
-}
-
-.final_section h4{
-    font-weight: var(--medium-font);
-    
-    text-align: center;
-}
-
-.final_section p{
-    font-weight: var(--normal-font);
-    line-height: var(--line-height);
-    padding: 0.3;  
-}
-
-.final_features_GIF {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 55%;
+.solution-strip img {
+    margin: 1rem;
+    height: auto;
+    width: 70%;
     box-shadow: var(--box-shadow);
 }
 
-.conclusion h4{
-    margin-top: 4rem;
-}
-
-
-/* FOOTER */
-footer {
-    background-color: var(--bg-color);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 2rem 0 0;
-}
-
+/* Scrollup and Scrollup icon */
 .scroll-up {
     position: fixed;
     right: 0.5%;
@@ -376,47 +216,60 @@ footer {
     height: 3rem;
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 1120px) {
-    .intro {
-        margin-left: 3rem;
-        margin-right: 3rem;
+/* Media queries */
+@media screen and (max-width: 1200px) {
+    .casestudy-global {
+        margin: calc(var(--left-right-margin)*1.61803*2) calc(var(--left-right-margin)*1.61803*6);
     }
 
-    .design_question p{
-        margin-left: 8rem;
-        margin-right: 8rem;
+    .intro-strip {
+        display: inline;
     }
 
-    .ideation_empathymap_painpoints_informationarchitecture{
-        margin-left: 3rem;
-        margin-right: 3rem;
+    .intro-strip div {
+        max-width: 100%;
     }
 
-    .client_initial_design{
-        display: block;
+    .intro-strip h2, h4 {
+        text-align: left;
+    }
+
+    .strip {
+        padding-left: 7rem; 
+        padding-right: 7rem; 
+    }
+
+    .strip h4 {
+        text-align: center;
+    }
+
+    .final-solution-section {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        align-content: center;
-    }
-
-    .client_initial_design img{
         width: 100%;
-        align-items: center;
-        align-content: center;
     }
 
-    .wireframes_section{
-        margin-left: 3rem;
-        margin-right: 3rem;
+    .solution-strip {
+        display: inline-block;
+    }
+    
+    .solution-strip div {
+        align-self: stretch;
+        margin: 0 auto;
+        padding: 0;
     }
 
-    .final_section{
-        margin-left: 3rem;
-        margin-right: 3rem;
+    .solution-strip p {
+        margin-right: 0;
+    }
+
+    .solution-strip img {
+        width: 90%;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen  and (max-width: 800px) {
     nav {
         padding: 1.5rem 1rem;   
     }
@@ -444,42 +297,32 @@ footer {
         transform: translateX(0);
     }
 
-    .intro {
-        margin-top: 2rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
-
-        flex-direction: column;
+    .casestudy-global {
+        margin: calc(var(--left-right-margin)*1.61803*2) calc(var(--left-right-margin)*1.61803*1);
     }
 
-    .intro_right {
-        margin-top: 0px;
+    .strip {
+        padding: 1rem; 
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .casestudy-global {
+        margin: var(--left-right-margin);
     }
 
-    .ideation_empathymap_painpoints_informationarchitecture{
-        margin-left: 3rem;
-        margin-right: 3rem;
+    .intro-strip div {
+        max-width: 100%;
     }
 
-    .client_initial_design{
-        display: block;
-        align-items: center;
-        align-content: center;
+    .intro-strip h2, h4 {
+        text-align: left;
     }
 
-    .client_initial_design img{
-        width: 100%;
-        align-items: center;
-        align-content: center;
-    }
-
-    .wireframes_section{
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-
-    .final_section{
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
+    .strip {
+        margin-top: var(--top-margin);
+        height: auto;
+        margin-bottom: var(--bottom-margin);
+        padding: 1rem; 
+    } 
 }
