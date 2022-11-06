@@ -6,14 +6,9 @@
   --normal-font: 300; 
   --medium-font: 500;
   --bold-font: 800;
-  --bg-color: #fcfcfc;
-  --primary-color: #000000;
-  --secondary-color: #8ea9df;
-  --primary-shadow: #e3e1e1;
-  --secondary-shadow: #e3e1e1;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
+  --bg-color: #0a0a0b;
+  --primary-color: #ebebeb;
+  --secondary-color: #ff00b7;
   --transition: 0.3s;
 }
 /* Variables end */
@@ -39,11 +34,13 @@ a {
 }
 
 a:hover {
-  color: #7972da;
+  color: var(--secondary-color);
 }
 
 body {
   font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
 }
 
 nav {
@@ -56,7 +53,6 @@ nav {
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
     background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
 
 nav h1 {
@@ -91,6 +87,35 @@ nav ul li {
     display: none;
 }
 
+.main-section-global {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    font-family: var(--font-family);
+    padding: 1rem;
+    font-size: xx-large;
+    font-weight: 100;
+    margin: 1rem;
+    margin-bottom: 4rem;
+    border: 1px solid var(--secondary-color);
+}
+
+.cards-div {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+}
+  
+.cards-div > div img{
+    width: 350px;
+    height: auto;
+}
+
 .scroll-up {
     position: fixed;
     right: 0.5%;
@@ -106,7 +131,7 @@ nav ul li {
 /* Media queries */
 
 @media screen and (max-width: 1200px) {
-
+    
 }
 
 @media screen and (max-width: 768px) {
