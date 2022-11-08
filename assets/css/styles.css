@@ -105,14 +105,22 @@ nav ul li {
     border: 1px solid var(--secondary-color);
 }
 
-.cards-div {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    text-align: center;
+.cards-row {
+    /* display: table; */
+    border: 1px solid red;
 }
-  
-.cards-div > div img{
-    width: 350px;
+
+.cards-column {
+    /* float: left; */
+    display: inline-block;
+    width: 45%;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid blue;
+}
+
+.cards-column img {
+    max-width: 100%;
     height: auto;
 }
 
