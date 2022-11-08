@@ -43,6 +43,17 @@ body {
   color: var(--primary-color);
 }
 
+h4 {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: var(--medium-font);
+}
+
+p {
+    text-align: left;
+    font-weight: var(--normal-font);
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -93,34 +104,56 @@ nav ul li {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
-.header {
-    font-family: var(--font-family);
+.header-div {
+    /* border: 1px solid green; */
+    margin-bottom: 1rem;
     padding: 1rem;
-    font-size: xx-large;
-    font-weight: 100;
-    margin: 1rem;
-    margin-bottom: 4rem;
-    border: 1px solid var(--secondary-color);
 }
 
-.cards-row {
-    /* display: table; */
-    border: 1px solid red;
+.header-img {
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+
+.header-div p{
+    padding: 1rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    font-size: x-large;
+    text-align: center;
+}
+
+#work-div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cards-container {
+    /* border: 1px solid red; */
+    width: 100%;
 }
 
 .cards-column {
-    /* float: left; */
     display: inline-block;
     width: 45%;
-    padding: 1rem;
-    margin: 0.5rem;
-    border: 1px solid blue;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    /* border: 1px solid blue; */
 }
 
 .cards-column img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -137,9 +170,21 @@ nav ul li {
 }
 
 /* Media queries */
-
 @media screen and (max-width: 1200px) {
-    
+    .header-div p{
+        padding: 1rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .cards-column {
+        display: block;
+        width: 100%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }  
 }
 
 @media screen and (max-width: 768px) {
@@ -169,8 +214,40 @@ nav ul li {
     nav ul.show {
         transform: translateX(0);
     }
+
+    .main-section-global {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .header-div p{
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .cards-column {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }  
 }
   
 @media screen and (max-width: 320px) {
+    .main-section-global {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
 
+    .header-div p{
+        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .cards-column {
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+    }  
 }
