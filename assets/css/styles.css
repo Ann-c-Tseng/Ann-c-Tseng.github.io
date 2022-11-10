@@ -108,19 +108,26 @@ nav ul li {
     margin-right: 3rem;
 }
 
-.header-div {
-    /* border: 1px solid green; */
+.full-header-div {
+    border: 1px solid var(--secondary-color);
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
 }
+
+.header-img-div {
+    max-width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+} 
 
 .header-img {
     padding: 0;
     margin: 0;
-    width: 90%;
+    max-width:100%;
+    max-height:100%;
 }
 
-.header-div p{
+.full-header-div p{
     padding: 1rem;
     padding-left: 25rem;
     padding-right: 25rem;
@@ -131,9 +138,14 @@ nav ul li {
     text-align: center;
 }
 
-#work-div {
-    margin-top: 2rem;
+.workcards-div {
+    margin-top: 3rem;
     margin-bottom: 2rem;
+}
+
+.workcards-div h1 {
+    font-weight: var(--medium-font);
+    padding: 1rem;
 }
 
 .cards-container {
@@ -171,7 +183,7 @@ nav ul li {
 
 /* Media queries */
 @media screen and (max-width: 1200px) {
-    .header-div p{
+    .full-header-div p{
         padding: 1rem;
         padding-left: 6rem;
         padding-right: 6rem;
@@ -220,7 +232,7 @@ nav ul li {
         margin-right: 1rem;
     }
 
-    .header-div p{
+    .full-header-div p{
         padding: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -240,7 +252,7 @@ nav ul li {
         margin-right: 0rem;
     }
 
-    .header-div p{
+    .full-header-div p{
         padding: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
