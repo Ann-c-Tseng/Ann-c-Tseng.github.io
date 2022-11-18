@@ -114,86 +114,11 @@ nav ul li {
     padding: 0.5rem;
 }
 
-.header-img-div {
+/* .header-img-div {
     max-width: 100%;
     height: 100vh;
-    /* background-color: var(--secondary-color); */
-    border: 1px solid var(--secondary-color);
-
-    align-items: flex-end;
-    display: flex;
-
-}
-
-.header-icons-movement {
-    border: none;
-    background-color: var(--secondary-color);
-    animation: MoveUpDown 2.5s linear infinite;
-    width: 30%;
-}
-
-.header-img-div > #header-avatar { 
-    margin-left: 35%;
-    height: auto;
-    width: 30%;
-
-    z-index: 1;
-
-    background-color: yellow;
-}
-
-#header-code {
-    position: absolute;
-    padding-bottom: 30%;
-    margin-left: 15%;
-
-    width: 15%;
-    z-index: 0;
-
-    transform: rotate(-25deg);
-}
-
-#header-design {
-    position: absolute;
-    padding-bottom: 30%;
-    margin-left: 62%;
-
-    width: 15%;
-    z-index: 0;
-
-    transform: rotate(10deg);
-}
-
-#header-film {
-    position: absolute;
-    padding-bottom: 10%;
-    margin-left: 68%;
-
-    width: 15%;
-    z-index: 0;
-
-    transform: rotate(5deg);
-}
-
-#header-food {
-    position: absolute;
-    padding-bottom: 10%;
-    margin-left: 10%;
-
-    width: 15%;
-    z-index: 0;
-
-    transform: rotate(-10deg);
-}
-
-@keyframes MoveUpDown {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
+    border: 1px solid var(--secondary-color); 
+} */
 
 .full-header-div p{
     padding: 1rem;
