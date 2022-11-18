@@ -126,8 +126,10 @@ nav ul li {
 }
 
 .header-icons-movement {
-    width: 100%;
-    background-color: pink;
+    border: none;
+    background-color: var(--secondary-color);
+    animation: MoveUpDown 2.5s linear infinite;
+    width: 30%;
 }
 
 .header-img-div > #header-avatar { 
@@ -136,11 +138,11 @@ nav ul li {
     width: 30%;
 
     z-index: 1;
+
+    background-color: yellow;
 }
 
 #header-code {
-    animation: MoveUpDown 2.5s linear infinite;
-
     position: absolute;
     padding-bottom: 30%;
     margin-left: 15%;
@@ -152,8 +154,6 @@ nav ul li {
 }
 
 #header-design {
-    animation: MoveUpDown 2.5s linear infinite; 
-
     position: absolute;
     padding-bottom: 30%;
     margin-left: 62%;
@@ -165,8 +165,6 @@ nav ul li {
 }
 
 #header-film {
-    animation: MoveUpDown 2.5s linear infinite;
-    
     position: absolute;
     padding-bottom: 10%;
     margin-left: 68%;
@@ -178,8 +176,6 @@ nav ul li {
 }
 
 #header-food {
-    animation: MoveUpDown 2.5s linear infinite;
-    
     position: absolute;
     padding-bottom: 10%;
     margin-left: 10%;
