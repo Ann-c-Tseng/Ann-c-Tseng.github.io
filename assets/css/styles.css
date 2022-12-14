@@ -6,14 +6,9 @@
   --normal-font: 300; 
   --medium-font: 500;
   --bold-font: 800;
-  --bg-color: #fcfcfc;
-  --primary-color: #000000;
-  --secondary-color: #8ea9df;
-  --primary-shadow: #e3e1e1;
-  --secondary-shadow: #e3e1e1;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
+  --bg-color: #0a0a0b;
+  --primary-color: #ebebeb;
+  --secondary-color: #ff00b7;
   --transition: 0.3s;
 }
 /* Variables end */
@@ -39,11 +34,24 @@ a {
 }
 
 a:hover {
-  color: #7972da;
+  color: var(--secondary-color);
 }
 
 body {
   font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: var(--medium-font);
+}
+
+p {
+    text-align: left;
+    font-weight: var(--normal-font);
 }
 
 nav {
@@ -56,7 +64,6 @@ nav {
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
     background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
 
 nav h1 {
@@ -91,129 +98,68 @@ nav ul li {
     display: none;
 }
 
-.hero {
+.main-section-global {
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
-    max-width: 100%;
-    margin: auto;
-
-    background-color: var(--secondary-color);
-}
-
-.hero img {
-    height: 37.5rem;
-    width: 37.5rem;
-}
-
-.bio {
-    width: 25rem;
-    padding: 0.625rem;
-    background-color: var(--secondary-color);
-    /* border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
-}
-
-.bio h2 {
-    background-color: var(--bg-color);
-    font-weight: var(--medium-font);
-    margin-bottom: var(--bottom-margin);
-
-    background-color: var(--secondary-color);
-}
-
-.bio p {
-    background-color: var(--bg-color);
-    font-weight: var(--normal-font);
-    line-height: var(--line-height);
-    padding: 0.3
-    rem 0;
-
-    background-color: var(--secondary-color);
-}
-
-.projects {
-    background-color: var(--bg-color);
-    padding: 32px 0;
-    margin-top: 2rem;
-}
-  
-.project-pic {
-    width: 100%;
-    height: 100%;
-}
-  
-.projects-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.projects-title {
-    font-weight: var(--medium-font);
     text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.full-header-div {
+    border: 1px solid var(--secondary-color);
     margin-bottom: 1rem;
+    padding: 0.5rem;
 }
-  
-.project-container {
+
+/* .header-img-div {
+    max-width: 100%;
+    height: 100vh;
+    border: 1px solid var(--secondary-color); 
+} */
+
+.full-header-div p{
+    padding: 1rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    font-size: x-large;
     text-align: center;
-    width: 21.875rem;
+}
+
+.workcards-div {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.workcards-div h1 {
+    font-weight: var(--medium-font);
     padding: 1rem;
 }
 
-.project-container p {
-    padding: 0.4rem;
-}
-  
-.project-title {
-    font-weight: var(--normal-font);
-    margin-bottom: var(--bottom-margin);
-}
-  
-.project-details {
-    font-weight: var(--normal-font);
-    margin-bottom: var(--bottom-margin);
-}
-  
-.project-card {
-    background-color: var(--bg-color);
-    /* border-radius: 11px; */
-    /* box-shadow: 0 3px 10px var(--primary-shadow); */
-    padding: 20px;
-    margin: 0px;
+.cards-container {
+    /* border: 1px solid red; */
+    width: 100%;
 }
 
-.project-link {
-    padding-right: 25px;
-    padding-left: 25px;
-    border-style: solid;
-    border-radius: 25px;
-    border-color: var(--secondary-color);
-    border-width: 5px;
-    background-color: var(--secondary-color);
-    color: rgb(242, 242, 242);
+.cards-column {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    /* border: 1px solid blue; */
 }
 
-.socials {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 1%;
-    bottom: 50%;
-}
-  
-.socicon {
-    border-radius: 100%;
-    width: 2rem;
-    height: 2rem;
-}
-
-footer {
-    background-color: var(--bg-color);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 2rem 0 0;
+.cards-column img {
+    width: 100%;
+    height: auto;
 }
 
 .scroll-up {
@@ -228,8 +174,25 @@ footer {
     height: 3rem;
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 720px) {
+/* Media queries */
+@media screen and (max-width: 1200px) {
+    .full-header-div p{
+        padding: 1rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .cards-column {
+        display: block;
+        width: 100%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }  
+}
+
+@media screen and (max-width: 768px) {
     nav {
         padding: 1.5rem 1rem;   
     }
@@ -256,71 +219,40 @@ footer {
     nav ul.show {
         transform: translateX(0);
     }
-  
-    .hero {
-        margin-top: -4rem;
-        flex-direction: column;
-        gap: 0;
-    }
-  
-    .hero img {
-        height: 37.5rem;
-        width: 30rem;
-    }
-  
-    .bio {
-        margin-top: -7rem;
-        width: 20.5rem;
 
-        margin-bottom: 2.5rem;
+    .main-section-global {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
-  
-    .more-about {
-        margin-top: 2rem;
-        padding: 1rem 3.5rem;
+
+    .full-header-div p{
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
-  
-    .more-about h2 {
-        text-align: center;
-    }
-  
-    .more-about p {
-        text-align: justify;
-    }
-  
-    .icon {
-        width: 5.875rem;
-        height: 5.25rem;
-    }
-  
-    .projects-container {
-        flex-direction: column;
-    }
-  
-    .project-container {
-        width: 20.875rem;
-    }
-  
-    .contact-form-container {
-        max-width: 23.75rem;
-    }
+
+    .cards-column {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }  
 }
   
-@media screen and (max-width: 420px) {
-    .hero img {
-        height: 37.5rem;
-        width: 23rem;
+@media screen and (max-width: 320px) {
+    .main-section-global {
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
-    
-    .bio {
-        width: 18.3rem;
+
+    .full-header-div p{
+        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
-    
-    .project-container {
-        width: 17.875rem;
-    }
-    
-    .contact-form-container {
-        max-width: 17.75rem;
-    }
+
+    .cards-column {
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+    }  
 }

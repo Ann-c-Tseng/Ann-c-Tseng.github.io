@@ -29,8 +29,8 @@
     <nav>
         <h1> Ann C. Tseng </h1>
         <ul class="navigation">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#work" class="nav-link">Work</a></li>
+            <li><a href="#about" class="nav-link"> About </a></li>
+            <li><a href="#work-div" class="nav-link">Work</a></li>
             <li><a href="https://drive.google.com/file/d/1WN7j-C2qAl1S9T10XnTLLyEKrbmHjO0c/view?usp=sharing" target="_blank" class="nav-link">Resume</a></li>
         </ul>
         <button class="burger-menu" id="burger-menu">
@@ -38,79 +38,69 @@
         </button>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-        <img
-          src="assets/images/anntseng.svg"
-          alt="ann-c-tseng"
-          loading="lazy"
-          class="hero-img"
-        />
+    <!-- Main Section -->
+    <section class="main-section-global">
+      <div class="full-header-div">
+        
+        <div class="header-img-div">
 
-          <div class="bio">
-            <h2 class="bio-title">Hi there, this is Ann! &#128522;</h2>
-            <p class="bio-text">
-              Currently an undergraduate student studying UX Design and Computer Science at Western Washington University!
-              I am a curious learner who seeks to use design and development as a bridge towards creating compelling user experiences!
-            </p>
+        </div>
+
+        <p>
+          I am currently an undergraduate student studying UX Design + Computer Science at Western Washington University! I am a curious learner who seeks to use design and development as a bridge towards creating compelling user experiences!
+        </p>
+
+        <p>
+          When I am not working on design or code projects... You can find me doodling, watching movies/musicals, hanging out with friends, or finding delicious food around Seattle.
+        </p>
+
+        <p>
+          I am always down to working with lovely people on creative projects, and I am super excited that you decided to stop by.
+        </p>
+
+        <p>
+          Please enjoy your stay &#129392
+        </p>
+      </div>
+
+      <a id="work-div" style="display: block; position: relative; top: -75px; visibility: hidden;"></a>
+
+      <div class="workcards-div">
+        <h1> Work </h1>
+        <div class="cards-container">
+          <div class="cards-column">
+            <a href="./assets/projectPages/groovyAssets/groovy.html">
+              <img src="./assets/images/Groovygroceries.png" alt="Groovy Groceries Card">
+            </a>
+            <h4> Groovy Groceries </h4>
+            <p>User Experience Design | Mobile</p>
           </div>
-    </section>
-
-    <!-- Projects section -->
-    <section class="projects" id="work">
-        <h2 class="projects-title">Work</h2>
-        <div class="projects-container">
-          <div class="project-container project-card">
-            <img
-              src="assets/images/Groovygroceries.png"
-              alt="groovy"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Groovy Groceries</h3>
-            <p class="project-details">
-              User Experience Design
-            </p>
-            <a href="./assets/projectPages/groovyAssets/groovy.html" class="project-link">View</a>
-          </div>
-
-          <div class="project-container project-card">
-            <img
-              src="assets/images/Noteable.png"
-              alt="noteable"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Noteable</h3>
-            <p class="project-details">
-                User Experience Design  
-            </p>
-            <a href="./assets/projectPages/noteableAssets/noteable.html" class="project-link">View</a>
-          </div>
-
-          <div class="project-container project-card">
-            <img
-              src="assets/images/Accessibilityresearch.png"
-              alt="accessibility"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Integrate Accessibility</h3>
-            <p class="project-details">
-              User Experience Research
-            </p>
-            <a href="./assets/projectPages/accessibilityAssets/accessibility.html" class="project-link">View</a>
+          <div class="cards-column">
+            <a href="./assets/projectPages/noteableAssets/noteable.html">
+              <img src="./assets/images/Noteable.png" alt="Noteable Card">
+            </a>
+            <h4> Noteable </h4>
+            <p>User Experience Design | Web</p>
           </div>
         </div>
-    </section>
-
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-    ><img
-      src="assets/icons/uparrow.png"
-      class="socicon up-arrow"
-      alt="scroll-up"
-    /></i>
+  
+        <div class="cards-container">
+          <div class="cards-column">
+            <a href="./assets/projectPages/accessibilityAssets/accessibility.html">
+              <img src="./assets/images/Accessibilityresearch.png" alt="Accessibility Research Card">
+            </a>
+            <h4> Accessibility Education in AI Courses </h4>
+            <p>User Research</p>
+          </div>
+          <div class="cards-column">
+            <a href="./assets/projectPages/mistygroveAssets/mistygrove.html">
+              <img src="./assets/images/MistyGrove.png" alt="Misty Grove">
+            </a>
+            <h4> Misty Grove</h4>
+            <p>A JavaScript Role-Playing Game</p>
+          </div>
+        </div>
+      </div>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
