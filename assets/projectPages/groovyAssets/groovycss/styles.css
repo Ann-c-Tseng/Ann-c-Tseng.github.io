@@ -2,18 +2,19 @@
 
 /* Variables */
 :root {
+  --top-margin: 2rem;
+  --bottom-margin: 2rem;
+  --left-right-margin: 1rem;
+  --box-shadow: 6px 6px 19px -3px #e1e2e7;
+
   --font-family: "Jost", sans-serf;
   --normal-font: 300; 
   --medium-font: 500;
   --bold-font: 800;
-  --bg-color: #fcfcfc;
-  --primary-color: #000000;
+  --bg-color: #0a0a0b;
+  --primary-color: #ebebeb;
   --secondary-color: #ff00b7;
-  --top-margin: 2rem;
-  --bottom-margin: 2rem;
-  --left-right-margin: 1rem;
   --transition: 0.3s;
-  --box-shadow: 6px 6px 19px -3px #e1e2e7;
 }
 /* Variables end */
 
@@ -23,6 +24,8 @@ html {
 
 /* CSS Resets*/
 * {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -139,8 +142,6 @@ nav ul li {
     margin-top: calc(var(--left-right-margin)*1.61803*3);
     padding-left: 7rem; 
     padding-right: 7rem; 
-    /* background-color:#8ea9df;
-    border: 1px solid black; */
 }
 
 .strip p {
@@ -154,7 +155,6 @@ nav ul li {
 
 .solution-strip {
     display: flex;
-    box-shadow: var(--box-shadow);
     margin-bottom: 3rem;
     margin-top: 3rem;
     border: 1px solid rgb(57, 79, 54);
@@ -166,6 +166,8 @@ nav ul li {
     align-items: center;
     text-align: center;
     padding: 1rem;
+
+    border-radius: 2rem;
 }
 
 .solution-strip h4 {
@@ -187,7 +189,6 @@ nav ul li {
     margin: 1rem;
     height: auto;
     width: 70%;
-    box-shadow: var(--box-shadow);
 }
 
 /* Scrollup and Scrollup icon */
