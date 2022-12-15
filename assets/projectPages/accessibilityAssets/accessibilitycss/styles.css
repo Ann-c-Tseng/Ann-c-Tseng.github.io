@@ -6,14 +6,9 @@
   --normal-font: 300; 
   --medium-font: 500;
   --bold-font: 800;
-  --bg-color: #fcfcfc;
-  --primary-color: #000000;
+  --bg-color: #0a0a0b;
+  --primary-color: #ebebeb;
   --secondary-color: #ff00b7;
-  --primary-shadow: #e3e1e1;
-  --secondary-shadow: #e3e1e1;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
   --transition: 0.3s;
 }
 /* Variables end */
@@ -27,6 +22,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--bg-color);
 }
 
 ul {
@@ -107,6 +103,8 @@ nav ul li {
 }
 
 .intro {
+    color: var(--primary-color);
+
     display: flex;
     align-items: left;
     justify-content: left;
@@ -117,8 +115,6 @@ nav ul li {
     margin-left: auto;
     margin-bottom: auto;
     margin-top: 2rem;
-
-    /* background-color: var(--bg-color); */
 }
 
 .intro_left h2 {
