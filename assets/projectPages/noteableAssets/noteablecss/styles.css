@@ -2,18 +2,18 @@
 
 /* Variables */
 :root {
+  --top-margin: 2rem;
+  --bottom-margin: 2rem;
+  --left-right-margin: 1rem;
+
   --font-family: "Jost", sans-serf;
   --normal-font: 300; 
   --medium-font: 500;
   --bold-font: 800;
-  --bg-color: #fcfcfc;
-  --primary-color: #000000;
+  --bg-color: #0a0a0b;
+  --primary-color: #ebebeb;
   --secondary-color: #ff00b7;
-  --top-margin: 2rem;
-  --bottom-margin: 2rem;
-  --left-right-margin: 1rem;
   --transition: 0.3s;
-  --box-shadow: 6px 6px 19px -3px #e1e2e7;
 }
 /* Variables end */
 
@@ -23,6 +23,8 @@ html {
 
 /* CSS Resets*/
 * {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
