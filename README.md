@@ -1,2 +1,2 @@
-# Ann Chia-en Tseng | UX Design Portfolio
-Link to UX Design Portfolio: https://ann-c-tseng.github.io/
+# Ann Chia-en Tseng | Portfolio
+Link: https://ann-c-tseng.github.io/
