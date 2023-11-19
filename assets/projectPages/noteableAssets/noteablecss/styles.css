@@ -5,13 +5,13 @@
   --top-margin: 2rem;
   --bottom-margin: 2rem;
   --left-right-margin: 1rem;
-
+  
   --font-family: "Jost", sans-serf;
   --normal-font: 300; 
   --medium-font: 500;
   --bold-font: 800;
-  --bg-color: #0a0a0b;
-  --primary-color: #ebebeb;
+  --bg-color: #fdfdfd;
+  --primary-color: #0c0c0c;
   --secondary-color: #ff00b7;
   --transition: 0.3s;
 }
